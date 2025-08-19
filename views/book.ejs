@@ -1,0 +1,20 @@
+<h1>Tambah Buku Baru</h1>
+<p>Isi formulir di bawah ini untuk menambahkan buku baru ke dalam daftar.</p>
+
+<div class="row mt-4">
+    <div class="col-md-8">
+        <form action="/book/add" method="POST">
+            <div class="mb-3">
+                <label for="Name" class="form-label">Nama Buku</label>
+                <input type="text" class="form-control" id="Name" name="Name" required>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="completed" name="completed" value="1">
+                <label class="form-check-label" for="completed">Tandai sudah selesai dibaca</label>
+            </div>
+            
+            <a href="/book" class="btn btn-secondary">Batal</a>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+        </form>
+    </div>
+</div>
